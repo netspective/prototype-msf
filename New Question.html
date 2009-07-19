@@ -1,0 +1,117 @@
+<HTML><HEAD><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="imagetoolbar" content="no"><link href="Resources/axurerppage.css" type="text/css" rel="stylesheet"></HEAD><BODY>
+<script type="text/javascript">
+function InitializeSubmenu(submenucontainerid, tablecellroid, tablecellid, fname) { 
+var s = "";
+s = s + "function " + fname + "() { ";
+s = s + "document.getElementById(submenucontainerid).style.visibility='';";
+s = s + "BringToFront(submenucontainerid);";
+s = s + "}";
+if ((index = navigator.userAgent.indexOf("MSIE")) >= 0)
+s = s + "document.getElementById('" + tablecellid + "').attachEvent(\"onmouseover\", " + fname + ");";
+else
+s = s + "document.getElementById('" + tablecellid + "').addEventListener(\"mouseover\", " + fname + ", true);";
+s = s + "document.getElementById(tablecellroid).onclick = function() {";
+s = s + "if( document.createEvent ) {";
+s = s + "var evObj = document.createEvent('MouseEvents');";
+s = s + "evObj.initEvent( 'click', true, false );";
+s = s + "document.getElementById(tablecellid).dispatchEvent(evObj);";
+s = s + "} else if( document.createEventObject ) {";
+s = s + "document.getElementById(tablecellid).fireEvent('onclick');";
+s = s + "}";
+s = s + "}";
+eval(s);
+}
+</script>
+
+<span style="position:absolute; left:10px; top:76px; width:673px; height:7px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='New Question_files/u0.png',sizingMethod='scale');
+"><img style="width:673px; height:7px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="New Question_files/u0.png" border="0" alt=""></span>
+
+<IMG id=u0 src="Resources/transparent.gif" style="position:absolute; left:10px; top:75.5px; width:670px; height:4px">
+
+<DIV id=ou1 style="position:absolute; left:10px; top:78px; width:671px; height:26px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:679px; height:34px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='New Question_files/u1.png',sizingMethod='scale');
+"><img style="width:679px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="New Question_files/u1.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u1container style="position:absolute; left:10px; top:78px; width:671px; height:26px;; overflow:visible">
+
+<DIV id=u2 style="position:absolute; left:2px; top:4.5px; width:666px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u2_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u1 src="Resources/transparent.gif" style="position:absolute; left:10px; top:78px; width:670px; height:25px"  >
+
+<DIV id=ou3 style="position:absolute; left:189px; top:10px; width:151px; height:26px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:159px; height:34px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='New Question_files/u3.png',sizingMethod='scale');
+"><img style="width:159px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="New Question_files/u3.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u3container style="position:absolute; left:189px; top:10px; width:151px; height:26px;; overflow:visible">
+
+<DIV id=u4 style="position:absolute; left:2px; top:4.5px; width:146px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u4_rtf><span style=" color:#0000FF; font-size:10pt;">Interactive Prototype</span></DIV></DIV>
+</DIV>
+<IMG id=u3 src="Resources/transparent.gif" style="position:absolute; left:189px; top:10px; width:150px; height:25px"  >
+
+<DIV id=u5 style="position:absolute; left:530px; top:59px; width:150px; height:14px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u5_rtf><div style="text-align:right"><span style=" font-family:'Arial'; color:#000000; font-size:8pt;"><i>A Netspective production</i></span></div></DIV></DIV>
+<span style="position:absolute; left:14px; top:13px; width:56px; height:52px">
+<span id=ou6 style="position:absolute;left:0px;top:0px;width:56px;height:52px;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='New Question_files/u6.png',sizingMethod='scale');
+"><img style="width:56px; height:52px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="New Question_files/u6.png" border="0" alt=""></span>
+</span>
+<IMG id=u6 src="Resources/transparent.gif" style="position:absolute; left:14px; top:13px; width:56px; height:52px"   >
+
+<span style="position:absolute; left:73px; top:14px; width:117px; height:19px">
+<span id=ou7 style="position:absolute;left:0px;top:0px;width:117px;height:19px;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='New Question_files/u7.png',sizingMethod='scale');
+"><img style="width:117px; height:19px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="New Question_files/u7.png" border="0" alt=""></span>
+</span>
+<IMG id=u7 src="Resources/transparent.gif" style="position:absolute; left:73px; top:14px; width:117px; height:19px"   >
+
+<SELECT id=u8  style="position:absolute; left:505px; top:20px; width:175px; height:22px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+<OPTION selected value="Alan">Alan</OPTION>
+</SELECT>
+
+<DIV id=ou9 style="position:absolute; left:70px; top:40px; width:481px; height:26px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:489px; height:34px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='New Question_files/u9.png',sizingMethod='scale');
+"><img style="width:489px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="New Question_files/u9.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u9container style="position:absolute; left:70px; top:40px; width:481px; height:26px;; overflow:visible">
+
+<DIV id=u10 style="position:absolute; left:2px; top:0.5px; width:476px; height:24px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u10_rtf><span style=" color:#800000; font-size:16pt;"><b>Welcome </b></span></DIV></DIV>
+</DIV>
+<IMG id=u9 src="Resources/transparent.gif" style="position:absolute; left:70px; top:40px; width:480px; height:25px"  >
+
+<DIV id=ou11 style="position:absolute; left:10px; top:125px; width:671px; height:176px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:679px; height:184px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='New Question_files/u11.png',sizingMethod='scale');
+"><img style="width:679px; height:184px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="New Question_files/u11.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u11container style="position:absolute; left:10px; top:125px; width:671px; height:176px;; overflow:visible">
+
+<DIV id=u12 style="position:absolute; left:2px; top:2px; width:666px; height:128px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u12_rtf><span style=" color:#000000; font-size:10pt;">I'm Back,<br><br>Have you ever seen the movie &quot;Fun With Dick and Jane&quot;?&nbsp; Let's just say that I am Dick Harper.&nbsp; I get the raise, then the damn company goes down.&nbsp; I lost my job my house, all of my stuff, my wife took my son with her to go stay with her parents.&nbsp; I am so stressed!&nbsp; I don't know what ot do, I can't live like this.&nbsp; HELP ME!!!<br><br>Thank You,<br>--Alan</span></DIV></DIV>
+</DIV>
+<IMG id=u11 src="Resources/transparent.gif" style="position:absolute; left:10px; top:125px; width:670px; height:175px"  >
+
+<INPUT id=u13  type=submit value="Submit" style="position:absolute; left:580px; top:325px; width:100px; height:25px; ; ; text-align: center ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+<SCRIPT src="Resources/axurerp_pagescript.js"></SCRIPT>
+<SCRIPT src="New Question_files/axurerp_pagespecificscript.js"></SCRIPT></BODY></HTML>

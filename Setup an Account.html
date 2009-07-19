@@ -1,0 +1,360 @@
+<HTML><HEAD><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="imagetoolbar" content="no"><link href="Resources/axurerppage.css" type="text/css" rel="stylesheet"></HEAD><BODY>
+<script type="text/javascript">
+function InitializeSubmenu(submenucontainerid, tablecellroid, tablecellid, fname) { 
+var s = "";
+s = s + "function " + fname + "() { ";
+s = s + "document.getElementById(submenucontainerid).style.visibility='';";
+s = s + "BringToFront(submenucontainerid);";
+s = s + "}";
+if ((index = navigator.userAgent.indexOf("MSIE")) >= 0)
+s = s + "document.getElementById('" + tablecellid + "').attachEvent(\"onmouseover\", " + fname + ");";
+else
+s = s + "document.getElementById('" + tablecellid + "').addEventListener(\"mouseover\", " + fname + ", true);";
+s = s + "document.getElementById(tablecellroid).onclick = function() {";
+s = s + "if( document.createEvent ) {";
+s = s + "var evObj = document.createEvent('MouseEvents');";
+s = s + "evObj.initEvent( 'click', true, false );";
+s = s + "document.getElementById(tablecellid).dispatchEvent(evObj);";
+s = s + "} else if( document.createEventObject ) {";
+s = s + "document.getElementById(tablecellid).fireEvent('onclick');";
+s = s + "}";
+s = s + "}";
+eval(s);
+}
+</script>
+
+<INPUT id=u0  type=text value="First Name" style="position:absolute; left:10px; top:93px; width:175px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+
+<INPUT id=u1  type=text value="Last Name" style="position:absolute; left:10px; top:133px; width:175px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+
+<INPUT id=u2  type=text value="Email" style="position:absolute; left:10px; top:293px; width:175px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+
+<INPUT id=u3  type=text value="License #" style="position:absolute; left:10px; top:333px; width:175px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+
+<INPUT id=u4  type=text value="Telephone Number" style="position:absolute; left:10px; top:408px; width:175px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+
+<SELECT id=u5  style="position:absolute; left:210px; top:413px; width:130px; height:22px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+<OPTION selected value="Home Phone">Home Phone</OPTION>
+<OPTION selected value="Cell Phone">Cell Phone</OPTION>
+<OPTION selected value="Office Phone">Office Phone</OPTION>
+</SELECT>
+
+<INPUT id=u6  type=text value="$" style="position:absolute; left:70px; top:1560px; width:90px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+
+<TEXTAREA id=u7  style="position:absolute; left:10px; top:1800px; width:325px; height:145px; ; ; text-align: left ; font-family:'Courier New'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"  >Experience</TEXTAREA>
+
+<INPUT id=u8  type=submit value="Cancel" style="position:absolute; left:240px; top:1959px; width:100px; height:25px; ; ; text-align: center ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+
+<INPUT id=u9  type=text value="User ID" style="position:absolute; left:10px; top:173px; width:175px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+
+<INPUT id=u10  type=text value="Password" style="position:absolute; left:10px; top:213px; width:175px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+
+<INPUT id=u11  type=text value="Verify Password" style="position:absolute; left:10px; top:253px; width:175px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+
+<INPUT id=u12  type=text value="Malpractice Insurance #" style="position:absolute; left:10px; top:373px; width:210px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+
+<TEXTAREA id=u13  style="position:absolute; left:10px; top:1600px; width:320px; height:180px; ; ; text-align: left ; font-family:'Courier New'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"  >Education</TEXTAREA>
+
+<DIV id=u14 style="position:absolute; left:190px; top:334px; width:40px; height:19px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u14_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Exp.</span></DIV></DIV>
+<SELECT id=u15  style="position:absolute; left:235px; top:333px; width:55px; height:22px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+<OPTION selected value="01">01</OPTION>
+<OPTION selected value="02">02</OPTION>
+<OPTION selected value="03">03</OPTION>
+<OPTION selected value="04">04</OPTION>
+<OPTION selected value="05">05</OPTION>
+<OPTION selected value="06">06</OPTION>
+<OPTION selected value="07">07</OPTION>
+<OPTION selected value="08">08</OPTION>
+<OPTION selected value="09">09</OPTION>
+<OPTION selected value="11">11</OPTION>
+<OPTION selected value="12">12</OPTION>
+</SELECT>
+
+<SELECT id=u16  style="position:absolute; left:300px; top:333px; width:90px; height:22px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+<OPTION selected value="2207">2207</OPTION>
+<OPTION selected value="2008">2008</OPTION>
+<OPTION selected value="2009">2009</OPTION>
+<OPTION selected value="2010">2010</OPTION>
+<OPTION selected value="2011">2011</OPTION>
+<OPTION selected value="2012">2012</OPTION>
+<OPTION selected value="2013">2013</OPTION>
+<OPTION selected value="2014">2014</OPTION>
+<OPTION selected value="2015">2015</OPTION>
+</SELECT>
+
+<INPUT id=u17  type=text value="State" style="position:absolute; left:395px; top:333px; width:125px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+
+<SELECT id=u18  style="position:absolute; left:535px; top:333px; width:175px; height:22px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+<OPTION selected value="Select Liciense Type">Select Liciense Type</OPTION>
+<OPTION selected value="...">...</OPTION>
+<OPTION selected value="Family and Marriage Counseling">Family and Marriage Counseling</OPTION>
+<OPTION selected value="Psyycologist">Psyycologist</OPTION>
+<OPTION selected value="Clinical Social Work">Clinical Social Work</OPTION>
+<OPTION selected value="Mental Health">Mental Health</OPTION>
+</SELECT>
+
+<DIV id=u19 style="position:absolute; left:10px; top:1564px; width:50px; height:21px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u19_rtf><span style=" font-family:'Arial'; color:#000000; font-size:11pt;">Rate</span></DIV></DIV>
+<INPUT id=u20  type=text value="Telephone Number" style="position:absolute; left:10px; top:443px; width:175px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+
+<SELECT id=u21  style="position:absolute; left:210px; top:448px; width:130px; height:22px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+<OPTION selected value="Cell Phone">Cell Phone</OPTION>
+<OPTION selected value="Home Phone">Home Phone</OPTION>
+<OPTION selected value="Office Phone">Office Phone</OPTION>
+</SELECT>
+
+<INPUT id=u22  type=text value="Telephone Number" style="position:absolute; left:10px; top:473px; width:175px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+
+<SELECT id=u23  style="position:absolute; left:210px; top:478px; width:130px; height:22px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+<OPTION selected value="Office Phone">Office Phone</OPTION>
+<OPTION selected value="Cell Phone">Cell Phone</OPTION>
+<OPTION selected value="Home Phone">Home Phone</OPTION>
+</SELECT>
+
+<DIV id=ou24 style="position:absolute; left:91px; top:750px; width:331px; height:191px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:339px; height:199px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Setup an Account_files/u24.png',sizingMethod='scale');
+"><img style="width:339px; height:199px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Setup an Account_files/u24.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u24container style="position:absolute; left:91px; top:750px; width:331px; height:191px;; overflow:visible">
+
+<DIV id=u25 style="position:absolute; left:2px; top:2px; width:326px; height:112px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u25_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;"> In order to provide accurate session timing, please be sure to provide your time zone. This will allow our system to accurately book a session with a Client from California even if you reside in New York. If you are on a business trip in Los Angeles, you may set your time zone to Pacific Time which will allow you to book and hold session on your laptop from that location.</span></DIV></DIV>
+</DIV>
+<IMG id=u24 src="Resources/transparent.gif" style="position:absolute; left:91px; top:750px; width:330px; height:190px"  >
+
+<DIV id=u26 style="position:absolute; left:11px; top:751px; width:80px; height:19px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u26_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;"><b>Time Zone</b></span></DIV></DIV>
+<INPUT id=u27  type=text value="(GMT) ___________" style="position:absolute; left:13px; top:955px; width:175px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+
+<DIV id=u27ann style="font-size:1px; position:absolute; left:179px; top:951px; width:1px; height:1px; overflow:visible"></DIV>
+
+<DIV id=u28container style="position:absolute; left:13px; top:1041px; width:100px; height:16px; ; ; text-align: left " >
+<DIV id=u29 style="position:absolute; left:16px; top:0px; width:82px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u29_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Male</span></DIV></DIV>
+</DIV>
+<DIV style="position:absolute; left:13px; top:1041px; width:100px; height:16px; ; ; text-align: left " ><INPUT id=u28 name="u28" style="position:absolute; left:-3px; top:-2px;" type=radio value=radio  ></DIV>
+<DIV id=u30container style="position:absolute; left:13px; top:1061px; width:100px; height:16px; ; ; text-align: left " >
+<DIV id=u31 style="position:absolute; left:16px; top:0px; width:82px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u31_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Female</span></DIV></DIV>
+</DIV>
+<DIV style="position:absolute; left:13px; top:1061px; width:100px; height:16px; ; ; text-align: left " ><INPUT id=u30 name="u30" style="position:absolute; left:-3px; top:-2px;" type=radio value=radio  ></DIV>
+<INPUT id=u32  type=text value="Office Address Line 1" style="position:absolute; left:10px; top:513px; width:175px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+
+<INPUT id=u33  type=text value="Office Address Line 2" style="position:absolute; left:10px; top:548px; width:175px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+
+<INPUT id=u34  type=text value="City " style="position:absolute; left:10px; top:588px; width:175px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+
+<INPUT id=u35  type=text value="Sate" style="position:absolute; left:195px; top:588px; width:85px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+
+<INPUT id=u36  type=text value="Zip Code" style="position:absolute; left:290px; top:588px; width:100px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+
+<DIV id=u37 style="position:absolute; left:10px; top:643px; width:150px; height:19px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u37_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Availability</span></DIV></DIV>
+<DIV id=u38container style="position:absolute; left:10px; top:673px; width:130px; height:16px; ; ; text-align: left " >
+<DIV id=u39 style="position:absolute; left:16px; top:0px; width:112px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u39_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Face-to-Face</span></DIV></DIV>
+</DIV>
+<DIV style="position:absolute; left:10px; top:673px; width:130px; height:16px; ; ; text-align: left " ><INPUT id=u38 style="position:absolute; left:-3px; top:-2px;" type=checkbox value=checkbox  ></DIV>
+<DIV id=u40container style="position:absolute; left:10px; top:694px; width:100px; height:16px; ; ; text-align: left " >
+<DIV id=u41 style="position:absolute; left:16px; top:0px; width:82px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u41_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Phone</span></DIV></DIV>
+</DIV>
+<DIV style="position:absolute; left:10px; top:694px; width:100px; height:16px; ; ; text-align: left " ><INPUT id=u40 style="position:absolute; left:-3px; top:-2px;" type=checkbox value=checkbox  ></DIV>
+<DIV id=u42container style="position:absolute; left:10px; top:714px; width:100px; height:16px; ; ; text-align: left " >
+<DIV id=u43 style="position:absolute; left:16px; top:0px; width:82px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u43_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Online</span></DIV></DIV>
+</DIV>
+<DIV style="position:absolute; left:10px; top:714px; width:100px; height:16px; ; ; text-align: left " ><INPUT id=u42 style="position:absolute; left:-3px; top:-2px;" type=checkbox value=checkbox  ></DIV>
+<SELECT id=u44  style="position:absolute; left:13px; top:1000px; width:175px; height:22px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+<OPTION selected value="Language...">Language...</OPTION>
+<OPTION selected value="English">English</OPTION>
+<OPTION selected value="Spanish">Spanish</OPTION>
+<OPTION selected value="French">French</OPTION>
+<OPTION selected value="Japanese">Japanese</OPTION>
+<OPTION selected value="Chinese">Chinese</OPTION>
+</SELECT>
+
+<DIV id=u45container style="position:absolute; left:10px; top:1130px; width:450px; height:16px; ; ; text-align: left " >
+<DIV id=u46 style="position:absolute; left:16px; top:0px; width:432px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u46_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Psychiatrist</span></DIV></DIV>
+</DIV>
+<DIV style="position:absolute; left:10px; top:1130px; width:450px; height:16px; ; ; text-align: left " ><INPUT id=u45 style="position:absolute; left:-3px; top:-2px;" type=checkbox value=checkbox  ></DIV>
+<DIV id=u47 style="position:absolute; left:12px; top:1101px; width:110px; height:19px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u47_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;"><b>License Type</b></span></DIV></DIV>
+<DIV id=u48container style="position:absolute; left:10px; top:1151px; width:450px; height:16px; ; ; text-align: left " >
+<DIV id=u49 style="position:absolute; left:16px; top:0px; width:432px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u49_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Psychologist</span></DIV></DIV>
+</DIV>
+<DIV style="position:absolute; left:10px; top:1151px; width:450px; height:16px; ; ; text-align: left " ><INPUT id=u48 style="position:absolute; left:-3px; top:-2px;" type=checkbox value=checkbox  ></DIV>
+<DIV id=u50container style="position:absolute; left:10px; top:1171px; width:450px; height:16px; ; ; text-align: left " >
+<DIV id=u51 style="position:absolute; left:16px; top:0px; width:432px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u51_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Marriage and Family Therapist</span></DIV></DIV>
+</DIV>
+<DIV style="position:absolute; left:10px; top:1171px; width:450px; height:16px; ; ; text-align: left " ><INPUT id=u50 style="position:absolute; left:-3px; top:-2px;" type=checkbox value=checkbox  ></DIV>
+<DIV id=u52container style="position:absolute; left:10px; top:1191px; width:450px; height:16px; ; ; text-align: left " >
+<DIV id=u53 style="position:absolute; left:16px; top:0px; width:432px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u53_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Social Worker</span></DIV></DIV>
+</DIV>
+<DIV style="position:absolute; left:10px; top:1191px; width:450px; height:16px; ; ; text-align: left " ><INPUT id=u52 style="position:absolute; left:-3px; top:-2px;" type=checkbox value=checkbox  ></DIV>
+<DIV id=u54container style="position:absolute; left:10px; top:1211px; width:450px; height:16px; ; ; text-align: left " >
+<DIV id=u55 style="position:absolute; left:16px; top:0px; width:432px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u55_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">School Psychologist</span></DIV></DIV>
+</DIV>
+<DIV style="position:absolute; left:10px; top:1211px; width:450px; height:16px; ; ; text-align: left " ><INPUT id=u54 style="position:absolute; left:-3px; top:-2px;" type=checkbox value=checkbox  ></DIV>
+<DIV id=u56container style="position:absolute; left:10px; top:1230px; width:450px; height:16px; ; ; text-align: left " >
+<DIV id=u57 style="position:absolute; left:16px; top:0px; width:432px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u57_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Chemical dependency counselor</span></DIV></DIV>
+</DIV>
+<DIV style="position:absolute; left:10px; top:1230px; width:450px; height:16px; ; ; text-align: left " ><INPUT id=u56 style="position:absolute; left:-3px; top:-2px;" type=checkbox value=checkbox  ></DIV>
+<DIV id=u58 style="position:absolute; left:11px; top:1281px; width:110px; height:19px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u58_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;"><b>Specialties</b></span></DIV></DIV>
+<DIV id=u59container style="position:absolute; left:10px; top:1314px; width:450px; height:16px; ; ; text-align: left " >
+<DIV id=u60 style="position:absolute; left:16px; top:0px; width:432px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u60_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">ADD/ADHD</span></DIV></DIV>
+</DIV>
+<DIV style="position:absolute; left:10px; top:1314px; width:450px; height:16px; ; ; text-align: left " ><INPUT id=u59 style="position:absolute; left:-3px; top:-2px;" type=checkbox value=checkbox  ></DIV>
+<DIV id=u61container style="position:absolute; left:10px; top:1335px; width:450px; height:16px; ; ; text-align: left " >
+<DIV id=u62 style="position:absolute; left:16px; top:0px; width:432px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u62_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Child Abuse</span></DIV></DIV>
+</DIV>
+<DIV style="position:absolute; left:10px; top:1335px; width:450px; height:16px; ; ; text-align: left " ><INPUT id=u61 style="position:absolute; left:-3px; top:-2px;" type=checkbox value=checkbox  ></DIV>
+<DIV id=u63container style="position:absolute; left:10px; top:1355px; width:450px; height:16px; ; ; text-align: left " >
+<DIV id=u64 style="position:absolute; left:16px; top:0px; width:432px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u64_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Anger Management</span></DIV></DIV>
+</DIV>
+<DIV style="position:absolute; left:10px; top:1355px; width:450px; height:16px; ; ; text-align: left " ><INPUT id=u63 style="position:absolute; left:-3px; top:-2px;" type=checkbox value=checkbox  ></DIV>
+<DIV id=u65container style="position:absolute; left:10px; top:1374px; width:450px; height:16px; ; ; text-align: left " >
+<DIV id=u66 style="position:absolute; left:16px; top:0px; width:432px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u66_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Anxiety and Panic</span></DIV></DIV>
+</DIV>
+<DIV style="position:absolute; left:10px; top:1374px; width:450px; height:16px; ; ; text-align: left " ><INPUT id=u65 style="position:absolute; left:-3px; top:-2px;" type=checkbox value=checkbox  ></DIV>
+<DIV id=u67container style="position:absolute; left:10px; top:1394px; width:450px; height:16px; ; ; text-align: left " >
+<DIV id=u68 style="position:absolute; left:16px; top:0px; width:432px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u68_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">career/Job counseling</span></DIV></DIV>
+</DIV>
+<DIV style="position:absolute; left:10px; top:1394px; width:450px; height:16px; ; ; text-align: left " ><INPUT id=u67 style="position:absolute; left:-3px; top:-2px;" type=checkbox value=checkbox  ></DIV>
+<DIV id=u69container style="position:absolute; left:10px; top:1414px; width:450px; height:16px; ; ; text-align: left " >
+<DIV id=u70 style="position:absolute; left:16px; top:0px; width:432px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u70_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Eating Disorders</span></DIV></DIV>
+</DIV>
+<DIV style="position:absolute; left:10px; top:1414px; width:450px; height:16px; ; ; text-align: left " ><INPUT id=u69 style="position:absolute; left:-3px; top:-2px;" type=checkbox value=checkbox  ></DIV>
+<DIV id=u71container style="position:absolute; left:10px; top:1434px; width:450px; height:16px; ; ; text-align: left " >
+<DIV id=u72 style="position:absolute; left:16px; top:0px; width:432px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u72_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Fears and Phobias</span></DIV></DIV>
+</DIV>
+<DIV style="position:absolute; left:10px; top:1434px; width:450px; height:16px; ; ; text-align: left " ><INPUT id=u71 style="position:absolute; left:-3px; top:-2px;" type=checkbox value=checkbox  ></DIV>
+<DIV id=u73container style="position:absolute; left:10px; top:1455px; width:140px; height:16px; ; ; text-align: left " >
+<DIV id=u74 style="position:absolute; left:16px; top:0px; width:122px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u74_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Drug usage</span></DIV></DIV>
+</DIV>
+<DIV style="position:absolute; left:10px; top:1455px; width:140px; height:16px; ; ; text-align: left " ><INPUT id=u73 style="position:absolute; left:-3px; top:-2px;" type=checkbox value=checkbox  ></DIV>
+<DIV id=u75container style="position:absolute; left:10px; top:1475px; width:450px; height:16px; ; ; text-align: left " >
+<DIV id=u76 style="position:absolute; left:16px; top:0px; width:432px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u76_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Family counseling</span></DIV></DIV>
+</DIV>
+<DIV style="position:absolute; left:10px; top:1475px; width:450px; height:16px; ; ; text-align: left " ><INPUT id=u75 style="position:absolute; left:-3px; top:-2px;" type=checkbox value=checkbox  ></DIV>
+<DIV id=u77container style="position:absolute; left:10px; top:1494px; width:140px; height:16px; ; ; text-align: left " >
+<DIV id=u78 style="position:absolute; left:16px; top:0px; width:122px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u78_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Men's Issues</span></DIV></DIV>
+</DIV>
+<DIV style="position:absolute; left:10px; top:1494px; width:140px; height:16px; ; ; text-align: left " ><INPUT id=u77 style="position:absolute; left:-3px; top:-2px;" type=checkbox value=checkbox  ></DIV>
+<DIV id=u79container style="position:absolute; left:250px; top:1315px; width:450px; height:16px; ; ; text-align: left " >
+<DIV id=u80 style="position:absolute; left:16px; top:0px; width:432px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u80_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Self Esteem</span></DIV></DIV>
+</DIV>
+<DIV style="position:absolute; left:250px; top:1315px; width:450px; height:16px; ; ; text-align: left " ><INPUT id=u79 style="position:absolute; left:-3px; top:-2px;" type=checkbox value=checkbox  ></DIV>
+<DIV id=u81container style="position:absolute; left:250px; top:1335px; width:450px; height:16px; ; ; text-align: left " >
+<DIV id=u82 style="position:absolute; left:16px; top:0px; width:432px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u82_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Divorce</span></DIV></DIV>
+</DIV>
+<DIV style="position:absolute; left:250px; top:1335px; width:450px; height:16px; ; ; text-align: left " ><INPUT id=u81 style="position:absolute; left:-3px; top:-2px;" type=checkbox value=checkbox  ></DIV>
+<DIV id=u83container style="position:absolute; left:250px; top:1354px; width:450px; height:16px; ; ; text-align: left " >
+<DIV id=u84 style="position:absolute; left:16px; top:0px; width:432px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u84_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Depression</span></DIV></DIV>
+</DIV>
+<DIV style="position:absolute; left:250px; top:1354px; width:450px; height:16px; ; ; text-align: left " ><INPUT id=u83 style="position:absolute; left:-3px; top:-2px;" type=checkbox value=checkbox  ></DIV>
+<DIV id=u85container style="position:absolute; left:250px; top:1374px; width:450px; height:16px; ; ; text-align: left " >
+<DIV id=u86 style="position:absolute; left:16px; top:0px; width:432px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u86_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Parenting</span></DIV></DIV>
+</DIV>
+<DIV style="position:absolute; left:250px; top:1374px; width:450px; height:16px; ; ; text-align: left " ><INPUT id=u85 style="position:absolute; left:-3px; top:-2px;" type=checkbox value=checkbox  ></DIV>
+<DIV id=u87container style="position:absolute; left:250px; top:1394px; width:450px; height:16px; ; ; text-align: left " >
+<DIV id=u88 style="position:absolute; left:16px; top:0px; width:432px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u88_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Women's Issues</span></DIV></DIV>
+</DIV>
+<DIV style="position:absolute; left:250px; top:1394px; width:450px; height:16px; ; ; text-align: left " ><INPUT id=u87 style="position:absolute; left:-3px; top:-2px;" type=checkbox value=checkbox  ></DIV>
+<DIV id=u89container style="position:absolute; left:250px; top:1415px; width:450px; height:16px; ; ; text-align: left " >
+<DIV id=u90 style="position:absolute; left:16px; top:0px; width:432px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u90_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Pregnancy</span></DIV></DIV>
+</DIV>
+<DIV style="position:absolute; left:250px; top:1415px; width:450px; height:16px; ; ; text-align: left " ><INPUT id=u89 style="position:absolute; left:-3px; top:-2px;" type=checkbox value=checkbox  ></DIV>
+<DIV id=u91container style="position:absolute; left:250px; top:1434px; width:450px; height:16px; ; ; text-align: left " >
+<DIV id=u92 style="position:absolute; left:16px; top:0px; width:432px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u92_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Trauma</span></DIV></DIV>
+</DIV>
+<DIV style="position:absolute; left:250px; top:1434px; width:450px; height:16px; ; ; text-align: left " ><INPUT id=u91 style="position:absolute; left:-3px; top:-2px;" type=checkbox value=checkbox  ></DIV>
+<DIV id=u93 style="position:absolute; left:210px; top:304px; width:560px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u93_rtf><span style=" font-family:'Arial'; color:#999999; font-size:8pt;">A Verification email will be sent to this address, please click the link to authorize this account</span></DIV></DIV>
+<DIV id=ou94 style="position:absolute; left:70px; top:40px; width:481px; height:26px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:489px; height:34px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Setup an Account_files/u94.png',sizingMethod='scale');
+"><img style="width:489px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Setup an Account_files/u94.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u94container style="position:absolute; left:70px; top:40px; width:481px; height:26px;; overflow:visible">
+
+<DIV id=u95 style="position:absolute; left:2px; top:0.5px; width:476px; height:24px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u95_rtf><span style=" color:#800000; font-size:16pt;"><b>Create a counselor account</b></span></DIV></DIV>
+</DIV>
+<IMG id=u94 src="Resources/transparent.gif" style="position:absolute; left:70px; top:40px; width:480px; height:25px"  >
+
+<span style="position:absolute; left:10px; top:67px; width:673px; height:5px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Setup an Account_files/u96.png',sizingMethod='scale');
+"><img style="width:673px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Setup an Account_files/u96.png" border="0" alt=""></span>
+
+<IMG id=u96 src="Resources/transparent.gif" style="position:absolute; left:10px; top:66.5px; width:670px; height:2px">
+
+<DIV id=u97 style="position:absolute; left:530px; top:53px; width:150px; height:14px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u97_rtf><div style="text-align:right"><span style=" font-family:'Arial'; color:#000000; font-size:8pt;"><i>A Netspective production</i></span></div></DIV></DIV>
+<DIV id=ou98 style="position:absolute; left:189px; top:11px; width:151px; height:26px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:159px; height:34px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Setup an Account_files/u98.png',sizingMethod='scale');
+"><img style="width:159px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Setup an Account_files/u98.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u98container style="position:absolute; left:189px; top:11px; width:151px; height:26px;; overflow:visible">
+
+<DIV id=u99 style="position:absolute; left:2px; top:4.5px; width:146px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u99_rtf><span style=" color:#0000FF; font-size:10pt;">Interactive Prototype</span></DIV></DIV>
+</DIV>
+<IMG id=u98 src="Resources/transparent.gif" style="position:absolute; left:189px; top:11px; width:150px; height:25px"  >
+
+<span style="position:absolute; left:14px; top:14px; width:56px; height:52px">
+<span id=ou100 style="position:absolute;left:0px;top:0px;width:56px;height:52px;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Setup an Account_files/u100.png',sizingMethod='scale');
+"><img style="width:56px; height:52px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Setup an Account_files/u100.png" border="0" alt=""></span>
+</span>
+<IMG id=u100 src="Resources/transparent.gif" style="position:absolute; left:14px; top:14px; width:56px; height:52px"   >
+
+<span style="position:absolute; left:73px; top:15px; width:117px; height:19px">
+<span id=ou101 style="position:absolute;left:0px;top:0px;width:117px;height:19px;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Setup an Account_files/u101.png',sizingMethod='scale');
+"><img style="width:117px; height:19px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Setup an Account_files/u101.png" border="0" alt=""></span>
+</span>
+<IMG id=u101 src="Resources/transparent.gif" style="position:absolute; left:73px; top:15px; width:117px; height:19px"   >
+
+<INPUT id=u102  type=submit value="Submit" style="position:absolute; left:140px; top:1960px; width:100px; height:25px; ; ; text-align: center ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+<SCRIPT src="Resources/axurerp_pagescript.js"></SCRIPT>
+<SCRIPT src="Setup an Account_files/axurerp_pagespecificscript.js"></SCRIPT></BODY></HTML>

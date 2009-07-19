@@ -1,0 +1,203 @@
+<HTML><HEAD><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="imagetoolbar" content="no"><link href="Resources/axurerppage.css" type="text/css" rel="stylesheet"></HEAD><BODY>
+<script type="text/javascript">
+function InitializeSubmenu(submenucontainerid, tablecellroid, tablecellid, fname) { 
+var s = "";
+s = s + "function " + fname + "() { ";
+s = s + "document.getElementById(submenucontainerid).style.visibility='';";
+s = s + "BringToFront(submenucontainerid);";
+s = s + "}";
+if ((index = navigator.userAgent.indexOf("MSIE")) >= 0)
+s = s + "document.getElementById('" + tablecellid + "').attachEvent(\"onmouseover\", " + fname + ");";
+else
+s = s + "document.getElementById('" + tablecellid + "').addEventListener(\"mouseover\", " + fname + ", true);";
+s = s + "document.getElementById(tablecellroid).onclick = function() {";
+s = s + "if( document.createEvent ) {";
+s = s + "var evObj = document.createEvent('MouseEvents');";
+s = s + "evObj.initEvent( 'click', true, false );";
+s = s + "document.getElementById(tablecellid).dispatchEvent(evObj);";
+s = s + "} else if( document.createEventObject ) {";
+s = s + "document.getElementById(tablecellid).fireEvent('onclick');";
+s = s + "}";
+s = s + "}";
+eval(s);
+}
+</script>
+
+<DIV id=ou0 style="position:absolute; left:70px; top:40px; width:481px; height:26px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:489px; height:34px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Patient Blog Posts_files/u0.png',sizingMethod='scale');
+"><img style="width:489px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Patient Blog Posts_files/u0.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u0container style="position:absolute; left:70px; top:40px; width:481px; height:26px;; overflow:visible">
+
+<DIV id=u1 style="position:absolute; left:2px; top:0.5px; width:476px; height:24px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u1_rtf><span style=" color:#800000; font-size:16pt;"><b>Viewing Joe's Blog</b></span></DIV></DIV>
+</DIV>
+<IMG id=u0 src="Resources/transparent.gif" style="position:absolute; left:70px; top:40px; width:480px; height:25px"  >
+
+<span style="position:absolute; left:10px; top:67px; width:673px; height:7px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Patient Blog Posts_files/u2.png',sizingMethod='scale');
+"><img style="width:673px; height:7px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Patient Blog Posts_files/u2.png" border="0" alt=""></span>
+
+<IMG id=u2 src="Resources/transparent.gif" style="position:absolute; left:10px; top:66.5px; width:670px; height:4px">
+
+<DIV id=ou3 style="position:absolute; left:10px; top:69px; width:671px; height:26px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:679px; height:34px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Patient Blog Posts_files/u3.png',sizingMethod='scale');
+"><img style="width:679px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Patient Blog Posts_files/u3.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u3container style="position:absolute; left:10px; top:69px; width:671px; height:26px;; overflow:visible">
+
+<DIV id=u4 style="position:absolute; left:2px; top:4.5px; width:666px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u4_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u3 src="Resources/transparent.gif" style="position:absolute; left:10px; top:69px; width:670px; height:25px"  >
+
+<SELECT id=u5  style="position:absolute; left:505px; top:15px; width:175px; height:22px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 8pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+<OPTION selected value="Dr. Phil">Dr. Phil</OPTION>
+<OPTION  value="Go to My Profile">Go to My Profile</OPTION>
+<OPTION  value="Logout">Logout</OPTION>
+</SELECT>
+
+<DIV id=u5ann style="font-size:1px; position:absolute; left:671px; top:11px; width:1px; height:1px; overflow:visible"></DIV>
+
+<DIV id=u6 style="position:absolute; left:18px; top:74px; width:102px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u6_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:10pt;"><u>Find New Clients</u></span></DIV></DIV>
+<DIV id=u7 style="position:absolute; left:171.75px; top:74px; width:126px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u7_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:10pt;"><u>View Current Clients</u></span></DIV></DIV>
+<DIV id=u8 style="position:absolute; left:349.5px; top:74px; width:81px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u8_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:10pt;"><u>My Calender</u></span></DIV></DIV>
+<DIV id=u9 style="position:absolute; left:482.25px; top:74px; width:66px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u9_rtf><span style=" color:#0000FF; font-size:10pt;"><u>My Profile</u></span></DIV></DIV>
+<DIV id=u10 style="position:absolute; left:600px; top:74px; width:80px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u10_rtf><span style=" color:#0000FF; font-size:10pt;"><u>My Earnings</u></span></DIV></DIV>
+<DIV id=u11 style="position:absolute; left:530px; top:50px; width:150px; height:14px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u11_rtf><div style="text-align:right"><span style=" font-family:'Arial'; color:#000000; font-size:8pt;"><i>A Netspective production</i></span></div></DIV></DIV>
+<DIV id=ou12 style="position:absolute; left:185px; top:10px; width:151px; height:26px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:159px; height:34px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Patient Blog Posts_files/u12.png',sizingMethod='scale');
+"><img style="width:159px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Patient Blog Posts_files/u12.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u12container style="position:absolute; left:185px; top:10px; width:151px; height:26px;; overflow:visible">
+
+<DIV id=u13 style="position:absolute; left:2px; top:4.5px; width:146px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u13_rtf><span style=" color:#0000FF; font-size:10pt;">Interactive Prototype</span></DIV></DIV>
+</DIV>
+<IMG id=u12 src="Resources/transparent.gif" style="position:absolute; left:185px; top:10px; width:150px; height:25px"  >
+
+<span style="position:absolute; left:10px; top:13px; width:56px; height:52px">
+<span id=ou14 style="position:absolute;left:0px;top:0px;width:56px;height:52px;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Patient Blog Posts_files/u14.png',sizingMethod='scale');
+"><img style="width:56px; height:52px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Patient Blog Posts_files/u14.png" border="0" alt=""></span>
+</span>
+<IMG id=u14 src="Resources/transparent.gif" style="position:absolute; left:10px; top:13px; width:56px; height:52px"   >
+
+<span style="position:absolute; left:69px; top:14px; width:117px; height:19px">
+<span id=ou15 style="position:absolute;left:0px;top:0px;width:117px;height:19px;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Patient Blog Posts_files/u15.png',sizingMethod='scale');
+"><img style="width:117px; height:19px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Patient Blog Posts_files/u15.png" border="0" alt=""></span>
+</span>
+<IMG id=u15 src="Resources/transparent.gif" style="position:absolute; left:69px; top:14px; width:117px; height:19px"   >
+
+<DIV id=ou16 style="position:absolute; left:132px; top:115px; width:431px; height:166px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:439px; height:174px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Patient Blog Posts_files/u16.png',sizingMethod='scale');
+"><img style="width:439px; height:174px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Patient Blog Posts_files/u16.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u16container style="position:absolute; left:132px; top:115px; width:431px; height:166px;; overflow:visible">
+
+<DIV id=u17 style="position:absolute; left:2px; top:2px; width:426px; height:80px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u17_rtf><span style=" color:#000000; font-size:10pt;">My manager gave me a new project that has to be done by 3pm on Friday.&nbsp; I need more time, because my wife, and son's birthdays are this week.&nbsp; Also, my brother is getting married, and i have to go to California.&nbsp; With all of those things, i have only 2 days to work.&nbsp; Since this project is worth $3 million, i have to have it done.&nbsp; What should I do?</span></DIV></DIV>
+</DIV>
+<IMG id=u16 src="Resources/transparent.gif" style="position:absolute; left:132px; top:115px; width:430px; height:165px"  >
+
+<DIV id=u18 style="position:absolute; left:12px; top:120px; width:120px; height:32px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u18_rtf><span style=" color:#000000; font-size:10pt;">Post Submitted at: 3:00 pm 2 days ago</span></DIV></DIV>
+<DIV id=u19 style="position:absolute; left:132px; top:300px; width:100px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u19_rtf><span style=" color:#000000; font-size:10pt;">My Comments</span></DIV></DIV>
+<DIV id=ou20 style="position:absolute; left:242px; top:305px; width:311px; height:126px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:319px; height:134px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Patient Blog Posts_files/u20.png',sizingMethod='scale');
+"><img style="width:319px; height:134px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Patient Blog Posts_files/u20.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u20container style="position:absolute; left:242px; top:305px; width:311px; height:126px;; overflow:visible">
+
+<DIV id=u21 style="position:absolute; left:2px; top:2px; width:306px; height:111px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u21_rtf><span style=" color:#000000; font-size:10pt;">Well, I think that you should take a laptop to California, and work at night, or during a brake.&nbsp; And enjoy your families birthdays, but work while you are at home.&nbsp; You may have to give up some sleep, but you can make it up later.</span><br><br><span style=" color:#999999; font-size:9pt;">3:30 pm, 2 days ago</span></DIV></DIV>
+</DIV>
+<IMG id=u20 src="Resources/transparent.gif" style="position:absolute; left:242px; top:305px; width:310px; height:125px"  >
+
+<INPUT id=u22  type=submit value="New comment" style="position:absolute; left:450px; top:445px; width:100px; height:25px; ; ; text-align: center ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+
+<DIV id=ou23 style="position:absolute; left:129px; top:497px; width:431px; height:166px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:439px; height:174px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Patient Blog Posts_files/u23.png',sizingMethod='scale');
+"><img style="width:439px; height:174px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Patient Blog Posts_files/u23.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u23container style="position:absolute; left:129px; top:497px; width:431px; height:166px;; overflow:visible">
+
+<DIV id=u24 style="position:absolute; left:2px; top:2px; width:426px; height:32px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u24_rtf><span style=" color:#000000; font-size:10pt;">Dr. Phil, I need help! I have finals coming up in college today, but my big $3 million dollar project's team meeting is also today. What should I do?</span></DIV></DIV>
+</DIV>
+<IMG id=u23 src="Resources/transparent.gif" style="position:absolute; left:129px; top:497px; width:430px; height:165px"  >
+
+<DIV id=u25 style="position:absolute; left:9px; top:502px; width:120px; height:32px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u25_rtf><span style=" color:#000000; font-size:10pt;">Post Submitted at: 3:50 pm 3 days ago</span></DIV></DIV>
+<DIV id=u26 style="position:absolute; left:129px; top:682px; width:100px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u26_rtf><span style=" color:#000000; font-size:10pt;">My comments</span></DIV></DIV>
+<DIV id=ou27 style="position:absolute; left:239px; top:687px; width:311px; height:126px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:319px; height:134px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Patient Blog Posts_files/u27.png',sizingMethod='scale');
+"><img style="width:319px; height:134px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Patient Blog Posts_files/u27.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u27container style="position:absolute; left:239px; top:687px; width:311px; height:126px;; overflow:visible">
+
+<DIV id=u28 style="position:absolute; left:2px; top:2px; width:306px; height:79px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u28_rtf><span style=" color:#000000; font-size:10pt;">Joe, talk to your boss and see if you can reschedule your meeting. If not, then go to the exam and finish as fast as you can.</span><br><br><span style=" color:#999999; font-size:9pt;">3:30 pm, 3 days ago</span></DIV></DIV>
+</DIV>
+<IMG id=u27 src="Resources/transparent.gif" style="position:absolute; left:239px; top:687px; width:310px; height:125px"  >
+
+<DIV id=ou29 style="position:absolute; left:242px; top:827px; width:311px; height:126px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:319px; height:134px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Patient Blog Posts_files/u29.png',sizingMethod='scale');
+"><img style="width:319px; height:134px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Patient Blog Posts_files/u29.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u29container style="position:absolute; left:242px; top:827px; width:311px; height:126px;; overflow:visible">
+
+<DIV id=u30 style="position:absolute; left:2px; top:2px; width:306px; height:63px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u30_rtf><span style=" color:#000000; font-size:10pt;">Joe, if you can try to get someone you work with to go to the meeting in place of you.</span><br><br><span style=" color:#999999; font-size:9pt;">3:30 pm, 3 days ago</span></DIV></DIV>
+</DIV>
+<IMG id=u29 src="Resources/transparent.gif" style="position:absolute; left:242px; top:827px; width:310px; height:125px"  >
+
+<INPUT id=u31  type=submit value="New comment" style="position:absolute; left:450px; top:965px; width:100px; height:25px; ; ; text-align: center ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+
+<INPUT id=u32  type=submit value="Home" style="position:absolute; left:450px; top:1005px; width:100px; height:25px; ; ; text-align: center ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+<SCRIPT src="Resources/axurerp_pagescript.js"></SCRIPT>
+<SCRIPT src="Patient Blog Posts_files/axurerp_pagespecificscript.js"></SCRIPT></BODY></HTML>

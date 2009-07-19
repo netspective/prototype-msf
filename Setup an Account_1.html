@@ -1,0 +1,143 @@
+<HTML><HEAD><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="imagetoolbar" content="no"><link href="Resources/axurerppage.css" type="text/css" rel="stylesheet"></HEAD><BODY>
+<script type="text/javascript">
+function InitializeSubmenu(submenucontainerid, tablecellroid, tablecellid, fname) { 
+var s = "";
+s = s + "function " + fname + "() { ";
+s = s + "document.getElementById(submenucontainerid).style.visibility='';";
+s = s + "BringToFront(submenucontainerid);";
+s = s + "}";
+if ((index = navigator.userAgent.indexOf("MSIE")) >= 0)
+s = s + "document.getElementById('" + tablecellid + "').attachEvent(\"onmouseover\", " + fname + ");";
+else
+s = s + "document.getElementById('" + tablecellid + "').addEventListener(\"mouseover\", " + fname + ", true);";
+s = s + "document.getElementById(tablecellroid).onclick = function() {";
+s = s + "if( document.createEvent ) {";
+s = s + "var evObj = document.createEvent('MouseEvents');";
+s = s + "evObj.initEvent( 'click', true, false );";
+s = s + "document.getElementById(tablecellid).dispatchEvent(evObj);";
+s = s + "} else if( document.createEventObject ) {";
+s = s + "document.getElementById(tablecellid).fireEvent('onclick');";
+s = s + "}";
+s = s + "}";
+eval(s);
+}
+</script>
+
+<INPUT id=u0  type=text value="First Name" style="position:absolute; left:10px; top:80px; width:175px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+
+<INPUT id=u1  type=text value="Last Name" style="position:absolute; left:10px; top:120px; width:175px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+
+<INPUT id=u2  type=text value="Email" style="position:absolute; left:10px; top:280px; width:175px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+
+<INPUT id=u3  type=text value="User ID" style="position:absolute; left:10px; top:160px; width:175px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+
+<INPUT id=u4  type=text value="Password" style="position:absolute; left:10px; top:200px; width:175px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+
+<INPUT id=u5  type=text value="Verify Password" style="position:absolute; left:10px; top:240px; width:175px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+
+<INPUT id=u6  type=text value="Telephone Number" style="position:absolute; left:10px; top:320px; width:175px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+
+<SELECT id=u7  style="position:absolute; left:200px; top:320px; width:130px; height:22px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+<OPTION selected value="Cell Phone">Cell Phone</OPTION>
+<OPTION selected value="Home Phone">Home Phone</OPTION>
+<OPTION selected value="Office Phone">Office Phone</OPTION>
+</SELECT>
+
+<TEXTAREA id=u8  style="position:absolute; left:10px; top:470px; width:325px; height:145px; ; ; text-align: left ; font-family:'Courier New'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"  >About Me</TEXTAREA>
+
+<INPUT id=u9  type=submit value="Submit" style="position:absolute; left:190px; top:750px; width:100px; height:25px; ; ; text-align: center ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+
+<INPUT id=u10  type=submit value="Cancel" style="position:absolute; left:290px; top:750px; width:100px; height:25px; ; ; text-align: center ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+
+<DIV id=u11container style="position:absolute; left:10px; top:360px; width:100px; height:16px; ; ; text-align: left " >
+<DIV id=u12 style="position:absolute; left:16px; top:0px; width:82px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u12_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Male</span></DIV></DIV>
+</DIV>
+<DIV style="position:absolute; left:10px; top:360px; width:100px; height:16px; ; ; text-align: left " ><INPUT id=u11 name="u11" style="position:absolute; left:-3px; top:-2px;" type=radio value=radio  ></DIV>
+<DIV id=u13container style="position:absolute; left:10px; top:381px; width:100px; height:16px; ; ; text-align: left " >
+<DIV id=u14 style="position:absolute; left:16px; top:0px; width:82px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u14_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Female</span></DIV></DIV>
+</DIV>
+<DIV style="position:absolute; left:10px; top:381px; width:100px; height:16px; ; ; text-align: left " ><INPUT id=u13 name="u13" style="position:absolute; left:-3px; top:-2px;" type=radio value=radio  ></DIV>
+<DIV id=u15container style="position:absolute; left:180px; top:380px; width:100px; height:16px; ; ; text-align: left " >
+<DIV id=u16 style="position:absolute; left:16px; top:0px; width:82px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u16_rtf><span style=" color:#000000; font-size:10pt;">Under 18</span></DIV></DIV>
+</DIV>
+<DIV style="position:absolute; left:180px; top:380px; width:100px; height:16px; ; ; text-align: left " ><INPUT id=u15 name="u15" style="position:absolute; left:-3px; top:-2px;" type=radio value=radio  ></DIV>
+<DIV id=u17 style="position:absolute; left:180px; top:360px; width:150px; height:19px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u17_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Age</span></DIV></DIV>
+<DIV id=u18container style="position:absolute; left:180px; top:400px; width:100px; height:16px; ; ; text-align: left " >
+<DIV id=u19 style="position:absolute; left:16px; top:0px; width:82px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u19_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">18-25</span></DIV></DIV>
+</DIV>
+<DIV style="position:absolute; left:180px; top:400px; width:100px; height:16px; ; ; text-align: left " ><INPUT id=u18 name="u18" style="position:absolute; left:-3px; top:-2px;" type=radio value=radio  ></DIV>
+<DIV id=u20container style="position:absolute; left:180px; top:421px; width:100px; height:16px; ; ; text-align: left " >
+<DIV id=u21 style="position:absolute; left:16px; top:0px; width:82px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u21_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">25-65</span></DIV></DIV>
+</DIV>
+<DIV style="position:absolute; left:180px; top:421px; width:100px; height:16px; ; ; text-align: left " ><INPUT id=u20 name="u20" style="position:absolute; left:-3px; top:-2px;" type=radio value=radio  ></DIV>
+<DIV id=u22container style="position:absolute; left:180px; top:441px; width:100px; height:16px; ; ; text-align: left " >
+<DIV id=u23 style="position:absolute; left:16px; top:0px; width:82px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u23_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Over 65</span></DIV></DIV>
+</DIV>
+<DIV style="position:absolute; left:180px; top:441px; width:100px; height:16px; ; ; text-align: left " ><INPUT id=u22 name="u22" style="position:absolute; left:-3px; top:-2px;" type=radio value=radio  ></DIV>
+<DIV id=u24 style="position:absolute; left:200px; top:281px; width:560px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u24_rtf><span style=" font-family:'Arial'; color:#999999; font-size:8pt;">A Verification email will be sent to this address, please click the link to authorize this account</span></DIV></DIV>
+<span style="position:absolute; left:10px; top:66px; width:673px; height:5px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Setup an Account_1_files/u25.png',sizingMethod='scale');
+"><img style="width:673px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Setup an Account_1_files/u25.png" border="0" alt=""></span>
+
+<IMG id=u25 src="Resources/transparent.gif" style="position:absolute; left:10px; top:65.5px; width:670px; height:2px">
+
+<DIV id=u26 style="position:absolute; left:530px; top:52px; width:150px; height:14px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u26_rtf><div style="text-align:right"><span style=" font-family:'Arial'; color:#000000; font-size:8pt;"><i>A Netspective production</i></span></div></DIV></DIV>
+<DIV id=ou27 style="position:absolute; left:189px; top:10px; width:151px; height:26px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:159px; height:34px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Setup an Account_1_files/u27.png',sizingMethod='scale');
+"><img style="width:159px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Setup an Account_1_files/u27.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u27container style="position:absolute; left:189px; top:10px; width:151px; height:26px;; overflow:visible">
+
+<DIV id=u28 style="position:absolute; left:2px; top:4.5px; width:146px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u28_rtf><span style=" color:#0000FF; font-size:10pt;">Interactive Prototype</span></DIV></DIV>
+</DIV>
+<IMG id=u27 src="Resources/transparent.gif" style="position:absolute; left:189px; top:10px; width:150px; height:25px"  >
+
+<span style="position:absolute; left:14px; top:13px; width:56px; height:52px">
+<span id=ou29 style="position:absolute;left:0px;top:0px;width:56px;height:52px;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Setup an Account_1_files/u29.png',sizingMethod='scale');
+"><img style="width:56px; height:52px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Setup an Account_1_files/u29.png" border="0" alt=""></span>
+</span>
+<IMG id=u29 src="Resources/transparent.gif" style="position:absolute; left:14px; top:13px; width:56px; height:52px"   >
+
+<span style="position:absolute; left:73px; top:14px; width:117px; height:19px">
+<span id=ou30 style="position:absolute;left:0px;top:0px;width:117px;height:19px;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Setup an Account_1_files/u30.png',sizingMethod='scale');
+"><img style="width:117px; height:19px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Setup an Account_1_files/u30.png" border="0" alt=""></span>
+</span>
+<IMG id=u30 src="Resources/transparent.gif" style="position:absolute; left:73px; top:14px; width:117px; height:19px"   >
+
+<DIV id=ou31 style="position:absolute; left:70px; top:40px; width:481px; height:26px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:489px; height:34px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Setup an Account_1_files/u31.png',sizingMethod='scale');
+"><img style="width:489px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Setup an Account_1_files/u31.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u31container style="position:absolute; left:70px; top:40px; width:481px; height:26px;; overflow:visible">
+
+<DIV id=u32 style="position:absolute; left:2px; top:0.5px; width:476px; height:24px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u32_rtf><span style=" color:#800000; font-size:16pt;"><b>Become a Patient</b></span></DIV></DIV>
+</DIV>
+<IMG id=u31 src="Resources/transparent.gif" style="position:absolute; left:70px; top:40px; width:480px; height:25px"  >
+
+<DIV id=u33 style="position:absolute; left:10px; top:634px; width:330px; height:32px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u33_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">*Note: You can select a personal doctor from your welcome page, by clicking on the link in the menu.</span></DIV></DIV><SCRIPT src="Resources/axurerp_pagescript.js"></SCRIPT>
+<SCRIPT src="Setup an Account_1_files/axurerp_pagespecificscript.js"></SCRIPT></BODY></HTML>

@@ -1,0 +1,161 @@
+<HTML><HEAD><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="imagetoolbar" content="no"><link href="Resources/axurerppage.css" type="text/css" rel="stylesheet"></HEAD><BODY>
+<script type="text/javascript">
+function InitializeSubmenu(submenucontainerid, tablecellroid, tablecellid, fname) { 
+var s = "";
+s = s + "function " + fname + "() { ";
+s = s + "document.getElementById(submenucontainerid).style.visibility='';";
+s = s + "BringToFront(submenucontainerid);";
+s = s + "}";
+if ((index = navigator.userAgent.indexOf("MSIE")) >= 0)
+s = s + "document.getElementById('" + tablecellid + "').attachEvent(\"onmouseover\", " + fname + ");";
+else
+s = s + "document.getElementById('" + tablecellid + "').addEventListener(\"mouseover\", " + fname + ", true);";
+s = s + "document.getElementById(tablecellroid).onclick = function() {";
+s = s + "if( document.createEvent ) {";
+s = s + "var evObj = document.createEvent('MouseEvents');";
+s = s + "evObj.initEvent( 'click', true, false );";
+s = s + "document.getElementById(tablecellid).dispatchEvent(evObj);";
+s = s + "} else if( document.createEventObject ) {";
+s = s + "document.getElementById(tablecellid).fireEvent('onclick');";
+s = s + "}";
+s = s + "}";
+eval(s);
+}
+</script>
+
+<SELECT id=u0  style="position:absolute; left:175px; top:108px; width:175px; height:22px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+<OPTION selected value="03/26/07">03/26/07</OPTION>
+<OPTION selected value="03/27/07">03/27/07</OPTION>
+<OPTION selected value="03/28/07">03/28/07</OPTION>
+<OPTION selected value="03/29/07">03/29/07</OPTION>
+<OPTION selected value="03/30/07">03/30/07</OPTION>
+</SELECT>
+
+<DIV id=u0ann style="font-size:1px; position:absolute; left:341px; top:104px; width:1px; height:1px; overflow:visible"></DIV>
+
+<SELECT id=u1  style="position:absolute; left:175px; top:148px; width:175px; height:22px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+<OPTION selected value="12:00 pm">12:00 pm</OPTION>
+<OPTION  value="1:00 pm">1:00 pm</OPTION>
+<OPTION  value="2:00 pm">2:00 pm</OPTION>
+<OPTION  value="3:00 pm">3:00 pm</OPTION>
+<OPTION  value="etc...">etc...</OPTION>
+</SELECT>
+
+<DIV id=u1ann style="font-size:1px; position:absolute; left:341px; top:144px; width:1px; height:1px; overflow:visible"></DIV>
+
+<SELECT id=u2  style="position:absolute; left:175px; top:190px; width:175px; height:22px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+<OPTION selected value="Dr.Phil">Dr.Phil</OPTION>
+<OPTION selected value="Dr. Shah">Dr. Shah</OPTION>
+<OPTION selected value="Dr. Smith">Dr. Smith</OPTION>
+<OPTION selected value="Dr. Sparrow">Dr. Sparrow</OPTION>
+<OPTION selected value="Dr. Turner">Dr. Turner</OPTION>
+<OPTION selected value="Dr. Lee">Dr. Lee</OPTION>
+<OPTION selected value="Dr. Patel">Dr. Patel</OPTION>
+</SELECT>
+
+<DIV id=u2ann style="font-size:1px; position:absolute; left:341px; top:186px; width:1px; height:1px; overflow:visible"></DIV>
+
+<INPUT id=u3  type=submit value="Schedule" style="position:absolute; left:140px; top:230px; width:100px; height:25px; ; ; text-align: center ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+
+<INPUT id=u4  type=submit value="Cancel" style="position:absolute; left:250px; top:230px; width:100px; height:25px; ; ; text-align: center ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+
+<DIV id=ou5 style="position:absolute; left:70px; top:40px; width:411px; height:26px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:419px; height:34px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Reschedule Appointment_files/u5.png',sizingMethod='scale');
+"><img style="width:419px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Reschedule Appointment_files/u5.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u5container style="position:absolute; left:70px; top:40px; width:411px; height:26px;; overflow:visible">
+
+<DIV id=u6 style="position:absolute; left:2px; top:0.5px; width:406px; height:24px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u6_rtf><span style=" color:#800000; font-size:16pt;"><b>Change an appointment</b></span></DIV></DIV>
+</DIV>
+<IMG id=u5 src="Resources/transparent.gif" style="position:absolute; left:70px; top:40px; width:410px; height:25px"  >
+
+<span style="position:absolute; left:7px; top:67px; width:643px; height:7px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Reschedule Appointment_files/u7.png',sizingMethod='scale');
+"><img style="width:643px; height:7px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Reschedule Appointment_files/u7.png" border="0" alt=""></span>
+
+<IMG id=u7 src="Resources/transparent.gif" style="position:absolute; left:7px; top:66.5px; width:640px; height:4px">
+
+<DIV id=ou8 style="position:absolute; left:7px; top:69px; width:721px; height:26px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:729px; height:34px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Reschedule Appointment_files/u8.png',sizingMethod='scale');
+"><img style="width:729px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Reschedule Appointment_files/u8.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u8container style="position:absolute; left:7px; top:69px; width:721px; height:26px;; overflow:visible">
+
+<DIV id=u9 style="position:absolute; left:2px; top:4.5px; width:716px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u9_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u8 src="Resources/transparent.gif" style="position:absolute; left:7px; top:69px; width:720px; height:25px"  >
+
+<SELECT id=u10  style="position:absolute; left:502px; top:15px; width:145px; height:22px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 8pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+<OPTION  value="Alan">Alan</OPTION>
+<OPTION selected value="Joe">Joe</OPTION>
+<OPTION  value="Go to My Profile">Go to My Profile</OPTION>
+<OPTION  value="Logout">Logout</OPTION>
+</SELECT>
+
+<DIV id=u10ann style="font-size:1px; position:absolute; left:638px; top:11px; width:1px; height:1px; overflow:visible"></DIV>
+
+<DIV id=u11 style="position:absolute; left:17px; top:76px; width:130px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u11_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:10pt;"><u>Immediate Help</u></span></DIV></DIV>
+<DIV id=u12 style="position:absolute; left:130px; top:75px; width:180px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u12_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:10pt;"><u>Schedule Appointment</u></span></DIV></DIV>
+<DIV id=u13 style="position:absolute; left:292px; top:75px; width:130px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u13_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:10pt;"><u>Leave Feedback</u></span></DIV></DIV>
+<DIV id=u14 style="position:absolute; left:420px; top:75px; width:80px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u14_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:10pt;"><u>Calender</u></span></DIV></DIV>
+<DIV id=u15 style="position:absolute; left:508px; top:75px; width:41px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u15_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:10pt;"><u>Blog</u></span></DIV></DIV>
+<DIV id=u16 style="position:absolute; left:497px; top:51px; width:150px; height:14px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u16_rtf><div style="text-align:right"><span style=" font-family:'Arial'; color:#000000; font-size:8pt;"><i>A Netspective production</i></span></div></DIV></DIV>
+<DIV id=ou17 style="position:absolute; left:184px; top:10px; width:151px; height:26px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:159px; height:34px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Reschedule Appointment_files/u17.png',sizingMethod='scale');
+"><img style="width:159px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Reschedule Appointment_files/u17.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u17container style="position:absolute; left:184px; top:10px; width:151px; height:26px;; overflow:visible">
+
+<DIV id=u18 style="position:absolute; left:2px; top:4.5px; width:146px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u18_rtf><span style=" color:#0000FF; font-size:10pt;">Interactive Prototype</span></DIV></DIV>
+</DIV>
+<IMG id=u17 src="Resources/transparent.gif" style="position:absolute; left:184px; top:10px; width:150px; height:25px"  >
+
+<span style="position:absolute; left:9px; top:13px; width:56px; height:52px">
+<span id=ou19 style="position:absolute;left:0px;top:0px;width:56px;height:52px;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Reschedule Appointment_files/u19.png',sizingMethod='scale');
+"><img style="width:56px; height:52px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Reschedule Appointment_files/u19.png" border="0" alt=""></span>
+</span>
+<IMG id=u19 src="Resources/transparent.gif" style="position:absolute; left:9px; top:13px; width:56px; height:52px"   >
+
+<span style="position:absolute; left:68px; top:14px; width:117px; height:19px">
+<span id=ou20 style="position:absolute;left:0px;top:0px;width:117px;height:19px;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Reschedule Appointment_files/u20.png',sizingMethod='scale');
+"><img style="width:117px; height:19px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Reschedule Appointment_files/u20.png" border="0" alt=""></span>
+</span>
+<IMG id=u20 src="Resources/transparent.gif" style="position:absolute; left:68px; top:14px; width:117px; height:19px"   >
+
+<DIV id=u21 style="position:absolute; left:567px; top:75px; width:92px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u21_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:10pt;"><u>Billing</u></span></DIV></DIV>
+<DIV id=u22 style="position:absolute; left:617px; top:75px; width:100px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u22_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:10pt;"><u>Find Doctor</u></span></DIV></DIV>
+<DIV id=u23 style="position:absolute; left:10px; top:110px; width:150px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u23_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Please select a new date</span></DIV></DIV>
+<DIV id=u24 style="position:absolute; left:10px; top:150px; width:160px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u24_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Please select a new time</span></DIV></DIV>
+<DIV id=u25 style="position:absolute; left:10px; top:194px; width:160px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u25_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Please select a Doctor</span></DIV></DIV><SCRIPT src="Resources/axurerp_pagescript.js"></SCRIPT>
+<SCRIPT src="Reschedule Appointment_files/axurerp_pagespecificscript.js"></SCRIPT></BODY></HTML>

@@ -1,0 +1,550 @@
+<HTML><HEAD><meta http-equiv="content-type" content="text/html; charset=utf-8"><link href="Resources/axurerpprototype.css" type="text/css" rel="stylesheet"></HEAD>
+<BODY>
+<A href=# onclick='parent.CloseSitemap()' style='font-size:8pt'>Close Frames</A><br><br>
+
+<SCRIPT LANGUAGE="JavaScript">
+image1 = new Image();
+image1.src = 'Resources/plus.gif';
+
+function CloseSitemap()
+{
+	parent.URL = parent.mainFrame.URL
+}
+
+function ToggleDiv(node, id)
+{
+	sibling = document.getElementById(id);
+	if (sibling.style.display == 'none')
+	{
+		if (node.childNodes.length > 0)
+		{
+			if (node.childNodes[0].tagName == "IMG")
+			{
+				node.childNodes[0].src = "Resources/minus.gif";
+			}
+		}
+
+		sibling.style.display = '';
+	}
+	else
+	{
+		if (node.childNodes.length > 0)
+		{
+			if (node.childNodes[0].tagName == "IMG")
+			{
+				node.childNodes[0].src = "Resources/plus.gif";
+			}
+		}
+		sibling.style.display = 'none';
+	}
+}
+
+var currentPage = null;
+
+function highlight(id)
+{
+	if (currentPage != null)
+	{
+		currentPage.style.backgroundColor = '#EEEEFF';
+		currentPage.style.paddingLeft = '0px';
+		currentPage.style.paddingRight = '0px';
+		currentPage.style.border = '0px solid #666666';
+	}
+	
+	currentPage = document.getElementById(id);
+    if (currentPage) {
+	    currentPage.style.backgroundColor = '#DDDDDD';
+	    currentPage.style.paddingLeft = '3px';
+	    currentPage.style.paddingRight = '3px';
+	    currentPage.style.border = '1px solid #666666';
+    }
+}
+
+</SCRIPT>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD nowrap><A onclick="ToggleDiv(this, 'd006ae23ee94540ce8fede05c1d255f54')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A href="Home.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p006ae23ee94540ce8fede05c1d255f54">Home</SPAN></A><DIV id="d006ae23ee94540ce8fede05c1d255f54">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="13" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="ToggleDiv(this, 'db9055ccc69074bc5a4e22630e56a0695')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A href="Counsler log in.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pb9055ccc69074bc5a4e22630e56a0695">Counsler log in</SPAN></A><DIV id="db9055ccc69074bc5a4e22630e56a0695">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="Ignored Question Counselor Welcome to MyStressFree.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p7c6e157fbf564e91bd317c13b69673e7">Ignored Question Counselor Welcome to MyStressFree</SPAN></A><DIV id="td7c6e157fbf564e91bd317c13b69673e7">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="Session.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p4581b4f25c3a4a1aaabb5a5cd8529905">Session</SPAN></A><DIV id="td4581b4f25c3a4a1aaabb5a5cd8529905">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="13" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="ToggleDiv(this, 'dc81a1dbb431f41438b111bda9a568a5c')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A href="Setup an Account.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pc81a1dbb431f41438b111bda9a568a5c">Setup an Account</SPAN></A><DIV id="dc81a1dbb431f41438b111bda9a568a5c">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="Varification.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p31e099b8cf0e48dfae2821e5eae4c70a">Varification</SPAN></A><DIV id="td31e099b8cf0e48dfae2821e5eae4c70a">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="13" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="ToggleDiv(this, 'd0adde661b3fa427b8d944a44d74f155e')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A href="Counselor Welcome to MyStressFree.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p0adde661b3fa427b8d944a44d74f155e">Counselor Welcome to MyStressFree</SPAN></A><DIV id="d0adde661b3fa427b8d944a44d74f155e">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="Chat Room.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pc0d7458443ec40f4be47be31f8ebd10a">Chat Room</SPAN></A><DIV id="tdc0d7458443ec40f4be47be31f8ebd10a">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="Tech Support.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p6d0bff1cc2b04b8bb620834f1c85d664">Tech Support</SPAN></A><DIV id="td6d0bff1cc2b04b8bb620834f1c85d664">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="Profile.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p6ab093c715e941a99ddbc854a3279d1c">Profile</SPAN></A><DIV id="td6ab093c715e941a99ddbc854a3279d1c">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="Find New Clients.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p3d6ac727266243bea9cc8d10bc1b41a7">Find New Clients</SPAN></A><DIV id="td3d6ac727266243bea9cc8d10bc1b41a7">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="Current Clients.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p1b2e925dc80e4f8cb2c085fb42fdf7d5">Current Clients</SPAN></A><DIV id="td1b2e925dc80e4f8cb2c085fb42fdf7d5">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="13" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="ToggleDiv(this, 'd0f0a0584f860446e9297f76ef8a136b8')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A href="Calender.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p0f0a0584f860446e9297f76ef8a136b8">Calender</SPAN></A><DIV id="d0f0a0584f860446e9297f76ef8a136b8">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="Set Reminder.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pb1cf4bc823c5439890b87a3e76bbc609">Set Reminder</SPAN></A><DIV id="tdb1cf4bc823c5439890b87a3e76bbc609">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="Appointment added.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pa4295245462541c6b334d7658422c4e3">Appointment added</SPAN></A><DIV id="tda4295245462541c6b334d7658422c4e3">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="13" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="ToggleDiv(this, 'd8655e11e91e24b42b9c986d91eb1d792')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A href="Viewable Profiles.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p8655e11e91e24b42b9c986d91eb1d792">Viewable Profiles</SPAN></A><DIV id="d8655e11e91e24b42b9c986d91eb1d792">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="Previous Session.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p4a2862504b8f46fc8d82c8616b858cd0">Previous Session</SPAN></A><DIV id="td4a2862504b8f46fc8d82c8616b858cd0">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="Earnings.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p83dc0309825f4811ae26bf132ae874e7">Earnings</SPAN></A><DIV id="td83dc0309825f4811ae26bf132ae874e7">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="Assesment.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p1b642d7d248c48a39bd9236d5b3aff98">Assesment</SPAN></A><DIV id="td1b642d7d248c48a39bd9236d5b3aff98">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="13" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="ToggleDiv(this, 'd754b0d16a23340a7b3f87cce6a97468b')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A href="Patient Blog Posts.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p754b0d16a23340a7b3f87cce6a97468b">Patient Blog Posts</SPAN></A><DIV id="d754b0d16a23340a7b3f87cce6a97468b">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="New Comment.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pb22ca919d7204a2392c9842ff1350e3c">New Comment</SPAN></A><DIV id="tdb22ca919d7204a2392c9842ff1350e3c">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="Answer Question.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pb00ea2927bfe4e699b72475fb5f8b456">Answer Question</SPAN></A><DIV id="tdb00ea2927bfe4e699b72475fb5f8b456">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="Current Session.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p8b050c28721245d1860f5fe911c347d3">Current Session</SPAN></A><DIV id="td8b050c28721245d1860f5fe911c347d3">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="13" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="ToggleDiv(this, 'd57cbf56293694354bf3baef157517c5f')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A href="Client Log in.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p57cbf56293694354bf3baef157517c5f">Client Log in</SPAN></A><DIV id="d57cbf56293694354bf3baef157517c5f">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="Session_1.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pf25ba8491347490ebea9352523967a0f">Session</SPAN></A><DIV id="tdf25ba8491347490ebea9352523967a0f">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="Setup an Account_1.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pc34b0ba6652a4a8f8c894741afdb76b4">Setup an Account</SPAN></A><DIV id="tdc34b0ba6652a4a8f8c894741afdb76b4">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="13" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="ToggleDiv(this, 'd83187aa024e04cc1a5e5efe40a2ae3af')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A href="Client Welcome MyStressFree.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p83187aa024e04cc1a5e5efe40a2ae3af">Client Welcome MyStressFree</SPAN></A><DIV id="d83187aa024e04cc1a5e5efe40a2ae3af">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="Copy of New Question.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p21696ae3102046908f66788e31dd58df">Copy of New Question</SPAN></A><DIV id="td21696ae3102046908f66788e31dd58df">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="13" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="ToggleDiv(this, 'd7b966376d270480eb910c5edf4f77f48')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A href="Billing.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p7b966376d270480eb910c5edf4f77f48">Billing</SPAN></A><DIV id="d7b966376d270480eb910c5edf4f77f48">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="Pre-Paid.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pac58c13c68664f038c42b7c185e2163b">Pre-Paid</SPAN></A><DIV id="tdac58c13c68664f038c42b7c185e2163b">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="13" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="ToggleDiv(this, 'dbf702816b8554acebec5028b3741a77c')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A href="Refine Search.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pbf702816b8554acebec5028b3741a77c">Refine Search</SPAN></A><DIV id="dbf702816b8554acebec5028b3741a77c">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="Search Results.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p255c4715797e4157ab10619e5b08fc3a">Search Results</SPAN></A><DIV id="td255c4715797e4157ab10619e5b08fc3a">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="13" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="ToggleDiv(this, 'd13ed8e304daa4c5388d5aad3fe8b2d2c')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A href="Searched Profile.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p13ed8e304daa4c5388d5aad3fe8b2d2c">Searched Profile</SPAN></A><DIV id="d13ed8e304daa4c5388d5aad3fe8b2d2c">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="You Have Selected.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p56a5369b7ea9440e831d50e06f4636a9">You Have Selected</SPAN></A><DIV id="td56a5369b7ea9440e831d50e06f4636a9">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="13" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="ToggleDiv(this, 'd0f69c0b291e84eb6b1e0e80324d9b835')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A href="Calender_1.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p0f69c0b291e84eb6b1e0e80324d9b835">Calender</SPAN></A><DIV id="d0f69c0b291e84eb6b1e0e80324d9b835">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="Set Reminder_1.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pbbeb72188bcc44a3a907cb9c1df3cec8">Set Reminder</SPAN></A><DIV id="tdbbeb72188bcc44a3a907cb9c1df3cec8">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="Profile_1.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pd79c4f1c2df142a688abc93ac1c430c6">Profile</SPAN></A><DIV id="tdd79c4f1c2df142a688abc93ac1c430c6">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="Leave Feedback.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p58919f3870de49d48ec1f47912fa154e">Leave Feedback</SPAN></A><DIV id="td58919f3870de49d48ec1f47912fa154e">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="Schedule Help.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p5967779f5a4b4c5babf22bb341b5030a">Schedule Help</SPAN></A><DIV id="td5967779f5a4b4c5babf22bb341b5030a">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="13" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="ToggleDiv(this, 'd9745ff40aa9942c2b970b794d4dcb298')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A href="Immediate Help.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p9745ff40aa9942c2b970b794d4dcb298">Immediate Help</SPAN></A><DIV id="d9745ff40aa9942c2b970b794d4dcb298">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="Help.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pa5050e9444a84d26a5fda458c9843bc5">Help</SPAN></A><DIV id="tda5050e9444a84d26a5fda458c9843bc5">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="Reschedule Appointment.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p93c884fd3e2f462194e154ebc89e63b2">Reschedule Appointment</SPAN></A><DIV id="td93c884fd3e2f462194e154ebc89e63b2">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="13" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="ToggleDiv(this, 'd31a45084ea504e7f90f6ad67e1d03378')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A href="Blog.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p31a45084ea504e7f90f6ad67e1d03378">Blog</SPAN></A><DIV id="d31a45084ea504e7f90f6ad67e1d03378">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="New Post.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p4a885fe9b3054e6fb2215b45cea792fa">New Post</SPAN></A><DIV id="td4a885fe9b3054e6fb2215b45cea792fa">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="General Feedback.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="paa4f3cc0ffba4a05ac7b076c09959757">General Feedback</SPAN></A><DIV id="tdaa4f3cc0ffba4a05ac7b076c09959757">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="Tech Support_1.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pcc4b4e235db94738a7df0106e5a0904c">Tech Support</SPAN></A><DIV id="tdcc4b4e235db94738a7df0106e5a0904c">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="Chat Room_1.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="peccef687c7534f3eb92282cd940a44b1">Chat Room</SPAN></A><DIV id="tdeccef687c7534f3eb92282cd940a44b1">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="Forgot Password.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p5f7f496e21994052a0b22f6bbc5013f4">Forgot Password</SPAN></A><DIV id="td5f7f496e21994052a0b22f6bbc5013f4">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="13" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="ToggleDiv(this, 'd24999bb49ec94aea8f1f8ba24d46f9cd')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A href="Admin Page.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p24999bb49ec94aea8f1f8ba24d46f9cd">Admin Page</SPAN></A><DIV id="d24999bb49ec94aea8f1f8ba24d46f9cd">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="13" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="ToggleDiv(this, 'df82b8fdde9f04a02bb1312acfec3c427')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A href="View Tech Support.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pf82b8fdde9f04a02bb1312acfec3c427">View Tech Support</SPAN></A><DIV id="df82b8fdde9f04a02bb1312acfec3c427">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="Reply.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p18a702c2179a4376b96026d6704add23">Reply</SPAN></A><DIV id="td18a702c2179a4376b96026d6704add23">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="13" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="ToggleDiv(this, 'd62449080f3b24024abfe2caa89c7014a')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A href="View Clients.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p62449080f3b24024abfe2caa89c7014a">View Clients</SPAN></A><DIV id="d62449080f3b24024abfe2caa89c7014a">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="13" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="ToggleDiv(this, 'd9b0e1d3933244ebea791013e70328341')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A href="Edit Profile.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p9b0e1d3933244ebea791013e70328341">Edit Profile</SPAN></A><DIV id="d9b0e1d3933244ebea791013e70328341">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="Delete Profile.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p7198f7d7de084c109ee750100959f781">Delete Profile</SPAN></A><DIV id="td7198f7d7de084c109ee750100959f781">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="13" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="ToggleDiv(this, 'd33c45225632d4b6c85ac84f3aac88618')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A href="View Counselors.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p33c45225632d4b6c85ac84f3aac88618">View Counselors</SPAN></A><DIV id="d33c45225632d4b6c85ac84f3aac88618">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="13" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="ToggleDiv(this, 'dca42c83516a14c04a7ddcc01f872b268')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A href="Edit Profile_1.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pca42c83516a14c04a7ddcc01f872b268">Edit Profile</SPAN></A><DIV id="dca42c83516a14c04a7ddcc01f872b268">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="Delete Profile_1.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="p9212933a2ef74b62a4e409200b41aa23">Delete Profile</SPAN></A><DIV id="td9212933a2ef74b62a4e409200b41aa23">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="Verify.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pdd5f06d3ee554ee7b9ca73d78186469d">Verify</SPAN></A><DIV id="tddd5f06d3ee554ee7b9ca73d78186469d">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="13" nowrap>&nbsp;</TD>
+		<TD nowrap><A onclick="ToggleDiv(this, 'debfe75a406e2467c818c68fa9e40c89b')"><IMG SRC="Resources/minus.gif"></A>&nbsp;&nbsp;<A href="Other Welcome to My StressFree.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pebfe75a406e2467c818c68fa9e40c89b">Other Welcome to My StressFree</SPAN></A><DIV id="debfe75a406e2467c818c68fa9e40c89b">
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="Reply to Answers.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pd14d7b39c884460d9c04937280e8b010">Reply to Answers</SPAN></A><DIV id="tdd14d7b39c884460d9c04937280e8b010">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+<TABLE BORDER="0" cellspacing="0" cellpadding="0">
+	<TR>
+		<TD WIDTH="30" nowrap>&nbsp;</TD>
+		<TD nowrap><A href="New Question.html" target="mainFrame"><IMG class="plusminus" SRC="Resources/page.gif" border=0><SPAN id="pb4137b05ebbb4b3f8e6ff8a6772a1b1e">New Question</SPAN></A><DIV id="tdb4137b05ebbb4b3f8e6ff8a6772a1b1e">
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE>
+			</DIV>
+		</TD>
+	</TR>
+</TABLE></BODY></HTML>
